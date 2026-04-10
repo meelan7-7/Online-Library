@@ -15,7 +15,7 @@ function AddBook() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleChange = (e) => {
+  const handleChange = (e) => {        // Handle input changes dynamically for all form fields
     setForm({
       ...form,
       [e.target.name]: e.target.value
