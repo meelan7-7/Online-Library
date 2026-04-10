@@ -26,7 +26,7 @@ function AddBook() {
     e.preventDefault();
 
     // ✅ Validation
-    if (
+    if (                        // Validate all fields before submitting form
       !form.title ||
       !form.author ||
       !form.category ||
@@ -38,7 +38,7 @@ function AddBook() {
     }
 
     // ✅ Add book to Redux
-    dispatch(
+    dispatch(                  // Dispatch action to add new book into Redux store
       addBook({
         ...form,
         id: Date.now()
