@@ -7,8 +7,7 @@ function BrowseBooks() {
   const { category } = useParams();   // Get category from URL parameters
   const books = useSelector(state => state.books.books);
 
-  const [search, setSearch] = useState("");
-
+  const [search, setSearch] = useState(""); // Local state to store search input
   const filteredBooks = books.filter(book =>
     (category === "all" || book.category === category) &&
     (book.title.toLowerCase().includes(search.toLowerCase()) ||
@@ -25,7 +24,7 @@ function BrowseBooks() {
         onChange={(e) => setSearch(e.target.value)}
       />
 
-      {filteredBooks.map(book => (
+      {filteredBooks.map(book => (           // Filter books based on category and search input
         <BookCard key={book.id} book={book} />
       ))}
     </div>
