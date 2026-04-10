@@ -6,7 +6,7 @@ function BookDetails() {
   const navigate = useNavigate();
   const books = useSelector(state => state.books.books);
 
-  const book = books.find(b => b.id === parseInt(id));
+  const book = books.find(b => b.id === parseInt(id));   // Find the selected book from Redux store using ID
 
   if (!book) {
     return <h2>Book not found</h2>;
