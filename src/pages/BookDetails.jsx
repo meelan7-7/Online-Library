@@ -2,7 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function BookDetails() {
-  const { id } = useParams();
+  const { id } = useParams();   // Get book ID from URL parameters
   const navigate = useNavigate();
   const books = useSelector(state => state.books.books);
 
