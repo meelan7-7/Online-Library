@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar() {         // Navbar component for navigating between pages
   return (
     <nav style={{ display: "flex", gap: "20px" }}>
       <Link to="/">Home</Link>
