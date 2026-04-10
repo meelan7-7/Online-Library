@@ -12,7 +12,7 @@ function App() {
       <Routes>
         {/* Routes WITH Navbar */}
         <Route path="/" element={<><Navbar /><Home /></>} />
-        <Route path="/books/:category" element={<><Navbar /><BrowseBooks /></>} />
+        <Route path="/books/:category" element={<><Navbar /><BrowseBooks /></>} />   {/* Configure Redux store with books reducer */}
         <Route path="/book/:id" element={<><Navbar /><BookDetails /></>} />
         <Route path="/add-book" element={<><Navbar /><AddBook /></>} />
 
