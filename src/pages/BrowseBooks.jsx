@@ -21,7 +21,7 @@ function BrowseBooks() {
       <input
         type="text"
         placeholder="Search by title or author..."
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e) => setSearch(e.target.value)}   // State to manage search input from user
       />
 
       {filteredBooks.map(book => (           // Filter books based on category and search input
