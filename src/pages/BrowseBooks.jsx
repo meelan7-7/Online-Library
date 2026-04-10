@@ -4,7 +4,7 @@ import { useState } from "react";
 import BookCard from "../components/BookCard";
 
 function BrowseBooks() {
-  const { category } = useParams();
+  const { category } = useParams();   // Get category from URL parameters
   const books = useSelector(state => state.books.books);
 
   const [search, setSearch] = useState("");
